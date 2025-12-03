@@ -42,8 +42,15 @@
             }
         },
         {
+            "name": "String Quote",
+            "scope": ["punctuation.definition.string", "punctuation.definition.char"],
+            "settings": {
+                "foreground": "#C3E88D",
+            }
+        },
+        {
             "name": "Variables",
-            "scope": ["variable", "string constant.other.placeholder"],
+            "scope": ["variable", "string constant.other.placeholder", "entity.name.variable.field.cs", "entity.name.variable.local.cs"],
             "settings": {
                 "foreground": "#EEFFFF"
             }
@@ -66,13 +73,14 @@
             "name": "Keyword, Storage",
             "scope": ["keyword", "storage.type", "storage.modifier"],
             "settings": {
-                "foreground": "#C792EA" // C792EA
+                "foreground": "#C792EA"
             }
         },
         {
             "name": "Operator, Misc",
             "scope": [
-                "keyword.control",
+                // "keyword.control",
+                "keyword.operator",
                 "constant.other.color",
                 "punctuation",
                 "meta.tag",
@@ -86,7 +94,31 @@
                 "keyword.other.substitution"
             ],
             "settings": {
-                "foreground": "#89DDFF"
+                "foreground": "#02E0E0"
+            }
+        },
+        {
+            "name": "Keyword Control ",
+            "scope": ["keyword.control.flow.return"],
+            "settings": {
+                "foreground": "#FF5370",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Keyword Control Conditional",
+            "scope": ["keyword.control.conditional"],
+            "settings": {
+                "foreground": "#02E0E0",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "Loop",
+            "scope": ["keyword.control.loop.for.cs"],
+            "settings": {
+                "foreground": "#02E0E0",
+                "fontStyle": "bold"
             }
         },
         {
@@ -120,7 +152,7 @@
         {
             "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
             "scope": [
-                "constant.numeric",
+                // "constant.numeric",
                 "constant.language",
                 "support.constant",
                 "constant.character",
@@ -130,7 +162,14 @@
                 "keyword.other"
             ],
             "settings": {
-                "foreground": "#F78C6C"
+                "foreground": "#02E0E0"
+            }
+        },
+        {
+            "name": "Parameter, Number",
+            "scope": ["entity.name.variable.parameter.cs" , "constant.numeric"],
+            "settings": {
+                "foreground": "#fda34e"
             }
         },
         {
@@ -159,6 +198,7 @@
                 "support.other.namespace.php",
                 "markup.changed.git_gutter",
                 "support.type.sys-types"
+                // "entity.name.type.cs"
             ],
             "settings": {
                 "foreground": "#FFCB6B"
