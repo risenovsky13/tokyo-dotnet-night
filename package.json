@@ -1,7 +1,7 @@
 {
   "name": "risenovsky13-tokyo-dotnet-night",
   "displayName": "Tokyo .NET Night",
-  "description": "Color theme heavly insppired by Tokyo Night but adjusted for .NET supported formats and languagesto match syntax color highlighting like the one in NeoVim <3",
+  "description": "Color theme heavly insppired by Tokyo Night but adjusted for .NET supported formats and languages to match syntax color highlighting like the one in NeoVim <3",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.97.0"

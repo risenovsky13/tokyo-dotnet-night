@@ -1,3 +1,6 @@
 node_modules
-*.vsix
-.idea
+.vsix
+.idea/
+.vscode/
+vsc-extension-quickstart.*
+.gitattributes
